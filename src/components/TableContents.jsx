@@ -2,11 +2,13 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 export default function TableContent({ contents = [] }) {
+  const baseURL = "/learn-swahili";
+
   return (
-    <section>
+    <nav>
       {contents.map(({ url, heading }) => (
         <NavLink
-          to={url}
+          to={`${baseURL}${url}`}
           key={heading}
           style={({ isActive }) => ({
             color: isActive ? "#1b0760" : "#5c5577",
@@ -18,6 +20,6 @@ export default function TableContent({ contents = [] }) {
           </p>
         </NavLink>
       ))}
-    </section>
+    </nav>
   );
 }
