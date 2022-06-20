@@ -1,0 +1,9 @@
+export { default as BiddingGoodbye } from "./BiddingGoodbyeSection";
+export { default as Familia } from "./FamiliaSection";
+export { default as GoodnightInSwahili } from "./GoodnightInSwahiliSection";
+export { default as MaamkiziGreetings } from "./MaamkiziGreetingsSection";
+export { default as MieziYaMwaka } from "./MieziYaMwakaSection";
+export { default as Phrases } from "./PhrasesSection";
+export { default as SehemuZaMwili } from "./SehemuZaMwiliSection";
+export { default as SikuZaWiki } from "./SikuZaWikiSection";
+export { default as Tarakimu } from "./TarakimuSection";

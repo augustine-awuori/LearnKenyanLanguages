@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
+import {
+  BiddingGoodbye,
+  Familia,
+  GoodnightInSwahili,
+  MaamkiziGreetings,
+  MieziYaMwaka,
+  Phrases,
+  SehemuZaMwili,
+  SikuZaWiki,
+  Tarakimu,
+} from "./sections";
+import TableOfContents from "./components/TableOfContents";
+import NotFound from "./components/NotFound";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="container">
+      <h1 className="heading">BASIC Swahili</h1>
+      <TableOfContents />
+      <Routes>
+        <Route path="/maamkizi-greetings" element={<MaamkiziGreetings />} />
+        <Route path="/bidding-goodbye" element={<BiddingGoodbye />} />
+        <Route path="/goodnight" element={<GoodnightInSwahili />} />
+        <Route path="/useful-phrases" element={<Phrases />} />
+        <Route path="/tarakimu" element={<Tarakimu />} />
+        <Route path="/siku-za-wiki" element={<SikuZaWiki />} />
+        <Route path="/miezi-ya-mwaka" element={<MieziYaMwaka />} />
+        <Route path="/familia" element={<Familia />} />
+        <Route path="/sehemu-za-mwili" element={<SehemuZaMwili />} />
+        <Route path="/" element={<MaamkiziGreetings />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </section>
   );
 }
-
-export default App;
