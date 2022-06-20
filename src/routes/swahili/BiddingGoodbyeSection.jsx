@@ -1,10 +1,10 @@
 import React from "react";
 
-import { getGoodByes } from "../services/fakeBiddingGoodbyeService";
-import PageNavigators from "../navigation/PageNavigators";
-import SwahiliEnglish from "../components/SwahiliEnglish";
-import useApi from "../hooks/useApi";
-import { getContents } from "../services/fakeContentsService";
+import { getGoodByes } from "../../services/fakeBiddingGoodbyeService";
+import PageNavigators from "../../navigation/PageNavigators";
+import SwahiliEnglish from "../../components/SwahiliEnglish";
+import useApi from "../../hooks/useApi";
+import { getContents } from "../../services/fakeContentsService";
 
 export default function BiddingGoodbyeSection() {
   const { data: goodbyes } = useApi(getGoodByes);

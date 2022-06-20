@@ -1,9 +1,9 @@
 import React from "react";
 
-import { getSehemuZaMwili } from "../services/fakeSehemuZaMwiliService";
-import PageNavigators from "../navigation/PageNavigators";
-import SwahiliEnglish from "../components/SwahiliEnglish";
-import useApi from "../hooks/useApi";
+import { getSehemuZaMwili } from "../../services/fakeSehemuZaMwiliService";
+import PageNavigators from "../../navigation/PageNavigators";
+import SwahiliEnglish from "../../components/SwahiliEnglish";
+import useApi from "../../hooks/useApi";
 
 export default function SehemuZaMwiliSection() {
   const { data } = useApi(getSehemuZaMwili);

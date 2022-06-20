@@ -11,7 +11,7 @@ import {
   SehemuZaMwili,
   SikuZaWiki,
   Tarakimu,
-} from "./sections";
+} from "./routes/swahili";
 import NotFound from "./components/NotFound";
 import SwahiliSectionsHeader from "./components/SwahiliSectionsHeader";
 

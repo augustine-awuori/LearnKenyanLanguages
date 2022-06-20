@@ -1,9 +1,12 @@
 import React from "react";
 
-import { getMazoezi, getSikuZaWiki } from "../services/fakeSikuZaWikiService";
-import PageNavigators from "../navigation/PageNavigators";
-import SwahiliEnglish from "../components/SwahiliEnglish";
-import useApi from "../hooks/useApi";
+import {
+  getMazoezi,
+  getSikuZaWiki,
+} from "../../services/fakeSikuZaWikiService";
+import PageNavigators from "../../navigation/PageNavigators";
+import SwahiliEnglish from "../../components/SwahiliEnglish";
+import useApi from "../../hooks/useApi";
 
 export default function SikuZaWikiSection() {
   const { data: sikuZaWiki } = useApi(getSikuZaWiki);

@@ -1,9 +1,9 @@
 import React from "react";
 
-import { getGoodnightsInSwahili } from "../services/fakeGoodnightInSwahiliService";
-import PageNavigators from "../navigation/PageNavigators";
-import SwahiliEnglish from "../components/SwahiliEnglish";
-import useApi from "../hooks/useApi";
+import { getGoodnightsInSwahili } from "../../services/fakeGoodnightInSwahiliService";
+import PageNavigators from "../../navigation/PageNavigators";
+import SwahiliEnglish from "../../components/SwahiliEnglish";
+import useApi from "../../hooks/useApi";
 
 export default function GoodnightInSwahiliSection() {
   const { data: goodnights } = useApi(getGoodnightsInSwahili);

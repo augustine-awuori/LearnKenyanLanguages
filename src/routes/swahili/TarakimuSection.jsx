@@ -1,9 +1,9 @@
 import React from "react";
 
-import { getAllNumbers } from "../services/fakeNumbersService";
-import Table from "../components/Table";
-import PageNavigators from "../navigation/PageNavigators";
-import useApi from "../hooks/useApi";
+import { getAllNumbers } from "../../services/fakeNumbersService";
+import Table from "../../components/Table";
+import PageNavigators from "../../navigation/PageNavigators";
+import useApi from "../../hooks/useApi";
 
 export default function TarakimuSection() {
   const { data } = useApi(getAllNumbers);

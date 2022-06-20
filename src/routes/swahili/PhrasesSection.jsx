@@ -1,9 +1,9 @@
 import React from "react";
 
-import { getPhrases } from "../services/fakePhrasesService";
-import PageNavigators from "../navigation/PageNavigators";
-import SwahiliEnglish from "../components/SwahiliEnglish";
-import useApi from "../hooks/useApi";
+import { getPhrases } from "../../services/fakePhrasesService";
+import PageNavigators from "../../navigation/PageNavigators";
+import SwahiliEnglish from "../../components/SwahiliEnglish";
+import useApi from "../../hooks/useApi";
 
 export default function Phrases() {
   const { data } = useApi(getPhrases);

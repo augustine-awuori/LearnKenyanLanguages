@@ -4,11 +4,11 @@ import {
   getNotes,
   getMieziYaMwaka,
   getMazoezi,
-} from "../services/fakeMieziYaMwakaService";
-import EnglishSwahiliInline from "../components/EnglishSwahiliInline";
-import PageNavigators from "../navigation/PageNavigators";
-import SwahiliEnglish from "../components/SwahiliEnglish";
-import useApi from "../hooks/useApi";
+} from "../../services/fakeMieziYaMwakaService";
+import EnglishSwahiliInline from "../../components/EnglishSwahiliInline";
+import PageNavigators from "../../navigation/PageNavigators";
+import SwahiliEnglish from "../../components/SwahiliEnglish";
+import useApi from "../../hooks/useApi";
 
 export default function MieziYaMwakaSection() {
   const { data: miezi } = useApi(getMieziYaMwaka);

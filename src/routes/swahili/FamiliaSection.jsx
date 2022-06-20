@@ -1,9 +1,9 @@
 import React from "react";
 
-import { getFamilia } from "../services/fakeFamiliaService";
-import PageNavigators from "../navigation/PageNavigators";
-import SwahiliEnglish from "../components/SwahiliEnglish";
-import useApi from "../hooks/useApi";
+import { getFamilia } from "../../services/fakeFamiliaService";
+import PageNavigators from "../../navigation/PageNavigators";
+import SwahiliEnglish from "../../components/SwahiliEnglish";
+import useApi from "../../hooks/useApi";
 
 export default function FamiliaSection() {
   const { data: familia } = useApi(getFamilia);

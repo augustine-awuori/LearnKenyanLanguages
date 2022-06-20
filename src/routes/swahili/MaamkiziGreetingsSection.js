@@ -1,10 +1,10 @@
 import React from "react";
 
-import { getGreetingsResponse } from "../services/fakeMaamkiziGreetingsResponse";
-import PageNavigators from "../navigation/PageNavigators";
-import SwahiliEnglish from "../components/SwahiliEnglish";
-import useApi from "../hooks/useApi";
-import { getContents } from "../services/fakeContentsService";
+import { getGreetingsResponse } from "../../services/fakeMaamkiziGreetingsResponse";
+import PageNavigators from "../../navigation/PageNavigators";
+import SwahiliEnglish from "../../components/SwahiliEnglish";
+import useApi from "../../hooks/useApi";
+import { getContents } from "../../services/fakeContentsService";
 
 export default function MaamkiziGreetingsSection() {
   const { data } = useApi(getGreetingsResponse);
