@@ -1,0 +1,242 @@
+@import "./normalize.css";
+
+/* Color Pallete */
+:root {
+  --color-body: #918ca4;
+  --color-body-darker: #5c5577;
+  --color-headings: #1b0760;
+  --color-light: #f8f4f4;
+}
+
+/* Typography */
+body {
+  color: var(--color-body);
+  font-family: "Montserrat Alternates", sans-serif;
+  letter-spacing: 0.1px;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+::selection {
+  background: var(--color-body-darker);
+  color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  letter-spacing: 0.5px;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  text-shadow: 1.5px 0px var(--color-body);
+  word-spacing: 0.5rem;
+}
+
+h1 {
+  font-size: 2.781rem;
+}
+
+h2 {
+  font-size: 2.527rem;
+}
+
+h3 {
+  font-size: 2.302rem;
+}
+
+p {
+  font-size: 1.924rem;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 2.281rem;
+  }
+
+  h2 {
+    font-size: 2.027rem;
+  }
+
+  h3 {
+    font-size: 1.802rem;
+  }
+
+  p {
+    font-size: 1.424rem;
+  }
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+/* Icons */
+.icon {
+  color: var(--color-body);
+  width: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .icon {
+    width: 2rem;
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Table of Content */
+.tableOfContent {
+  cursor: pointer;
+  background-color: var(--color-light);
+  border-radius: 1rem;
+  padding: 0 1rem;
+}
+
+.tableOfContent__header {
+  align-items: center;
+  border-bottom: 0.2px solid #6e6969;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tableOfContent__heading {
+  color: var(--color-body-darker);
+  margin: 1rem 0;
+}
+
+.content {
+  margin: 0.8rem 0;
+}
+
+/* Maamkizi Section */
+.swahili-english__swahili,
+.swahili-english__english {
+  margin: 0.7rem 0;
+}
+
+.translation {
+  color: var(--color-body-darker);
+}
+
+.swahili-english__swahili-container {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.swahili-english .icon {
+  width: 1rem;
+}
+
+/* Page Navigators */
+.pages-navigators {
+  display: flex;
+  flex-direction: row;
+}
+
+.pages-navigators :first-child {
+  margin-right: 1rem;
+}
+
+.pages-navigators :first-child .page-navigator__section-name::before {
+  content: "<< ";
+}
+
+.pages-navigators :nth-child(2) {
+  margin-left: 1rem;
+}
+
+.pages-navigators :nth-child(2) .page-navigator__section-name::after {
+  content: " >>";
+}
+
+.page-navigator {
+  border: 1px solid var(--color-light);
+  border-radius: 10px;
+  padding: 0.2rem 1rem;
+  margin: 2rem 0;
+  width: 50%;
+}
+
+.page-navigator__section-name {
+  color: var(--color-body-darker);
+  cursor: pointer;
+}
+
+.next-page-navigator {
+  text-align: right;
+}
+
+/* Tarakimu */
+.tarakimu__heading {
+  text-align: center;
+}
+
+/* Table */
+.table {
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-size: 2rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.table thead tr {
+  background-color: #009879;
+  color: #fff;
+  text-align: left;
+}
+
+.table th,
+.table td {
+  padding: 1.2rem 1.5rem;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .table {
+    font-size: 1.5rem;
+  }
+}
+
+/* English Swahili Inline */
+.english-swahili-inline {
+  display: flex;
+  flex-direction: row;
+}
+
+.english-swahili-inline .swahili {
+  color: var(--color-body-darker);
+}
+
+/* Miezi ya Mwaka */
+.zoezi__kichwa {
+  color: var(--color-body-darker);
+}
