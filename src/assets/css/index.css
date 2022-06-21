@@ -1,5 +1,11 @@
 @import "./normalize.css";
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /* Color Pallete */
 :root {
   --color-body: #918ca4;
@@ -239,4 +245,62 @@ a {
 /* Miezi ya Mwaka */
 .zoezi__kichwa {
   color: var(--color-body-darker);
+}
+
+/* Buttons */
+.btn {
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  outline: none;
+  padding: 1.5rem 0.5rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.btn--primary {
+  background: #0d6efd;
+  color: #fff;
+}
+
+.btn--primary:focus {
+  background-color: var(--color-body);
+}
+
+/* Forms */
+.form__heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-group {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group__label {
+  display: block;
+}
+
+.form-control {
+  background-color: transparent;
+  border-radius: 9px;
+  border: 1px solid #ced4da;
+  color: var(--color-body-darker);
+  outline: 0;
+  padding: 0.5rem;
+  transition: all 0.15s;
+  width: 100%;
+}
+
+.form-control:focus {
+  border: 1.5px solid #86b7fe;
+  box-shadow: 0 0 5px #b9d3fa;
+}
+
+.form-group__error-message {
+  color: rgb(243, 37, 37);
+  font-size: 1.5rem;
 }

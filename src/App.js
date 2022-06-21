@@ -13,12 +13,17 @@ import {
   Tarakimu,
 } from "./routes/swahili";
 import NotFound from "./components/NotFound";
+import RegisterForm from "./components/RegisterForm";
 import SwahiliSectionsHeader from "./components/SwahiliSectionsHeader";
+import LoginForm from "./components/LoginForm";
 
 export default function App() {
   return (
-    <section className="container">
+    <main className="container">
       <Routes>
+        <Route path="/login" element={<LoginForm />} />
+        <Route path="/register" element={<RegisterForm />} />
+
         <Route path="/learn-swahili" element={<SwahiliSectionsHeader />}>
           <Route index element={<MaamkiziGreetings />} />
           <Route path="bidding-goodbye" element={<BiddingGoodbye />} />
@@ -33,6 +38,6 @@ export default function App() {
 
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </section>
+    </main>
   );
 }
