@@ -14,9 +14,9 @@ const Form = ({
     validationSchema={validationSchema}
   >
     {() => (
-      <>
+      <form className="form">
         <h1 className="form__heading">{heading}</h1> {children}
-      </>
+      </form>
     )}
   </Formik>
 );

@@ -27,7 +27,7 @@ export default function LoginForm() {
       {renderInput("name", "Name")}
       {renderInput("email", "Email", "email")}
       {renderInput("password", "Password", "password")}
-      {renderButton("register")}
+      {renderButton("sign up")}
     </Form>
   );
 }

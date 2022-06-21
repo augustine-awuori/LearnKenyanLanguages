@@ -270,6 +270,14 @@ a {
 }
 
 /* Forms */
+.form {
+  border-radius: 20px;
+  box-shadow: 0 0 10px #b9d3fa;
+  margin: 5rem auto;
+  max-width: 70rem;
+  padding: 0.5rem 1rem 2rem;
+}
+
 .form__heading {
   text-align: center;
   text-transform: uppercase;
@@ -303,4 +311,10 @@ a {
 .form-group__error-message {
   color: rgb(243, 37, 37);
   font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    font-size: 1.5rem;
+  }
 }
