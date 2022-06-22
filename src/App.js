@@ -12,11 +12,15 @@ import {
   SikuZaWiki,
   Tarakimu,
 } from "./routes/swahili";
-import NotFound from "./components/NotFound";
-import RegisterForm from "./components/RegisterForm";
-import SwahiliSectionsHeader from "./components/SwahiliSectionsHeader";
-import LoginForm from "./components/LoginForm";
+import Home from "./routes/Home";
+import ContactUs from "./routes/ContactUs";
+import LoginForm from "./routes/LoginForm";
 import NavBar from "./components/NavBar";
+import NotFound from "./components/NotFound";
+import RegisterForm from "./routes/RegisterForm";
+import SwahiliSectionsHeader from "./components/SwahiliSectionsHeader";
+import PartnerWithUs from "./routes/PartnerWithUs";
+import Logout from "./routes/Logout";
 
 export default function App() {
   return (
@@ -26,6 +30,9 @@ export default function App() {
         <Routes>
           <Route path="/login" element={<LoginForm />} />
           <Route path="/register" element={<RegisterForm />} />
+          <Route path="/partner-with-us" element={<PartnerWithUs />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/log-out" element={<Logout />} />
 
           <Route path="/learn-swahili" element={<SwahiliSectionsHeader />}>
             <Route index element={<MaamkiziGreetings />} />
@@ -39,6 +46,7 @@ export default function App() {
             <Route path="sehemu-za-mwili" element={<SehemuZaMwili />} />
           </Route>
 
+          <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </section>
