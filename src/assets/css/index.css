@@ -85,6 +85,7 @@ a {
 /* Icons */
 .icon {
   color: var(--color-body);
+  cursor: pointer;
   width: 2rem;
 }
 
