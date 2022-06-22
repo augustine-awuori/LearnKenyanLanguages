@@ -97,7 +97,7 @@ a {
 /* Container */
 .container {
   max-width: 1140px;
-  margin: 0 auto;
+  margin: 7rem auto 0;
   padding: 0 2rem;
 }
 
@@ -359,11 +359,16 @@ a {
 
 /* NavBar */
 .nav {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0 1rem;
   align-items: center;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .nav__list {
