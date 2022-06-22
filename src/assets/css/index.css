@@ -379,6 +379,7 @@ a {
 
 .nav__item {
   border-bottom: 1px solid var(--color-light);
+  font-size: 1.5rem;
   padding: 0.5rem 2rem;
   transition: all 0.3s;
 }
@@ -392,7 +393,29 @@ a {
   margin: 0.5rem 0;
 }
 
-.nav__close-icon {
-  fill: #0d6efd;
-  color: #86b7fe;
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: flex;
+    max-height: 100%;
+    opacity: 1;
+    width: auto;
+  }
+
+  .nav__logo {
+    width: 9rem;
+  }
+
+  .nav__icon {
+    display: none;
+  }
+
+  .nav__item {
+    border: 0;
+    font-size: 1.5rem;
+  }
+
+  .nav__item:hover {
+    background: 0;
+    font-weight: 700;
+  }
 }

@@ -27,14 +27,14 @@ export default function NavBar() {
       {!isExpanded ? (
         <img
           src={cancel}
-          className="icon nav__close-icon"
+          className="icon nav__icon"
           alt="icon"
           onClick={switchExpansion}
         />
       ) : (
         <img
           src={menu}
-          className="icon nav__close-icon"
+          className="icon nav__icon"
           alt="icon"
           onClick={switchExpansion}
         />
