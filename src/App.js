@@ -12,15 +12,17 @@ import {
   SikuZaWiki,
   Tarakimu,
 } from "./routes/swahili";
-import Home from "./routes/Home";
-import ContactUs from "./routes/ContactUs";
-import LoginForm from "./routes/LoginForm";
+import {
+  ContactUs,
+  Home,
+  LoginForm,
+  Logout,
+  PartnerWithUs,
+  RegisterForm,
+} from "./routes";
 import NavBar from "./components/NavBar";
 import NotFound from "./components/NotFound";
-import RegisterForm from "./routes/RegisterForm";
 import SwahiliSectionsHeader from "./components/SwahiliSectionsHeader";
-import PartnerWithUs from "./routes/PartnerWithUs";
-import Logout from "./routes/Logout";
 
 export default function App() {
   return (
