@@ -318,3 +318,75 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/* List */
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Collapsibles */
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0deg);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+/* NavBar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item {
+  border-bottom: 1px solid var(--color-light);
+  padding: 0.5rem 2rem;
+  transition: all 0.3s;
+}
+
+.nav__item:hover {
+  background: var(--color-light);
+}
+
+.nav__logo {
+  width: 7rem;
+  margin: 0.5rem 0;
+}
+
+.nav__close-icon {
+  fill: #0d6efd;
+  color: #86b7fe;
+}
