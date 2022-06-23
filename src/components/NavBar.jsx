@@ -40,6 +40,9 @@ export default function NavBar() {
         />
       )}
       <ul className={collapsibleClassName}>
+        <NavLink to="/" onClick={switchExpansion}>
+          <li className="nav__item">Languages</li>
+        </NavLink>
         <NavLink to="/partner-with-us" onClick={switchExpansion}>
           <li className="nav__item">Partner With Us</li>
         </NavLink>

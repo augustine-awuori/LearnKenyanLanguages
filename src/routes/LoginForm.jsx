@@ -21,7 +21,7 @@ export default function LoginForm() {
       validationSchema={validationSchema}
       onSubmit={handleSubmit}
       initialValues={{ email: "", password: "" }}
-      heading="sign in"
+      heading="login"
     >
       {renderInput("email", "Email", "email")}
       {renderInput("password", "Password", "password")}
