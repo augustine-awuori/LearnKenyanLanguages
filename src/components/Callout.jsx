@@ -7,7 +7,7 @@ export default function Callout({ image, heading, content, targetPageUrl }) {
     <section className="block callout grid grid--1x2">
       <img className="grid__image callout__image" src={image} alt="" />
       <article>
-        <h2 className="block__heading callout__heading">{heading}</h2>
+        <h3 className="block__heading callout__heading">{heading}</h3>
         <p className="block__content callout__content">{content}</p>
         <CalloutButton to={targetPageUrl} />
       </article>

@@ -502,7 +502,9 @@ a {
 }
 
 /* Callout */
-.callout {
+.header {
+  text-align: center;
+  font-size: 4rem;
 }
 
 .callout__heading {
