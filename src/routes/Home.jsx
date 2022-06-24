@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="hero grid grid--1x2">
       <article>
-        <h1 className="hero__heading">Learn Kenyan Languages With Ease</h1>
+        <h1 className="hero__heading">Language Training School</h1>
         <p className="hero__tagline">
           We teach various Kenyan languages including local and national. We
           teach languages such as Kikuyu, Swahili and Luhya
