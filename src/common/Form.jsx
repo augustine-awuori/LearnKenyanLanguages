@@ -14,7 +14,7 @@ const Form = ({
     validationSchema={validationSchema}
   >
     {() => (
-      <form className="form">
+      <form className="form" data-aos="flip-left">
         <h1 className="form__heading">{heading}</h1> {children}
       </form>
     )}
