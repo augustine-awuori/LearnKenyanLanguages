@@ -19,7 +19,7 @@ export default function BiddingGoodbyeSection() {
       <PageNavigators
         nextSectionName="Goodnight in Swahili"
         nextUrl="/goodnight"
-        previousUrl="/maamkizi-greetings"
+        previousUrl="/"
         onNextNavigation={() => console.log("next")}
         previousSectionName="Maamkizi Greetings"
       />

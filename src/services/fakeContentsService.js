@@ -1,7 +1,7 @@
 const contents = [
   {
     heading: "Maamkizi Greetings",
-    url: "/maamkizi-greetings",
+    url: "/",
   },
   {
     heading: "Bidding Goodbye in Swahili",
