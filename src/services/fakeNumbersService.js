@@ -30,7 +30,7 @@ const tarakimuMpakaThalathini = [
   { digit: 22, word: "Ishirini na mbili" },
   { digit: 23, word: "Ishirini na tatu" },
   { digit: 24, word: "Ishirini na nne" },
-  { digit: 26, word: "Ishirini na tano" },
+  { digit: 25, word: "Ishirini na tano" },
   { digit: 26, word: "Ishirini na sita" },
   { digit: 27, word: "Ishirini na saba" },
   { digit: 28, word: "Ishirini na nane" },
