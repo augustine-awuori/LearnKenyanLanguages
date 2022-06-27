@@ -108,6 +108,7 @@ a {
   background-color: var(--color-light);
   border-radius: 1rem;
   padding: 0 1rem;
+  margin-bottom: 2rem;
 }
 
 .tableOfContent__header {
@@ -131,6 +132,7 @@ a {
 .swahili-english__swahili,
 .swahili-english__english {
   margin: 0.7rem 0;
+  text-transform: capitalize;
 }
 
 .translation {

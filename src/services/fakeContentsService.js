@@ -32,6 +32,14 @@ const contents = [
     heading: "Sehemu za Mwili",
     url: "/basic/sehemu-za-mwili",
   },
+  {
+    heading: "Time",
+    url: "/basic/time",
+  },
+  {
+    heading: "Vocabulary",
+    url: "/basic/vocabulary",
+  },
 ];
 
 const getContents = () => contents;

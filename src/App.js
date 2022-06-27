@@ -24,6 +24,8 @@ import NavBar from "./components/NavBar";
 import NotFound from "./components/NotFound";
 import SwahiliSectionsHeader from "./components/SwahiliSectionsHeader";
 import SelectLevel from "./components/SelectLevel";
+import Time from "./routes/swahili/Time";
+import Vocabulary from "./routes/swahili/Vocabulary";
 
 export default function App() {
   return (
@@ -52,6 +54,8 @@ export default function App() {
             <Route path="miezi-ya-mwaka" element={<MieziYaMwaka />} />
             <Route path="familia" element={<Familia />} />
             <Route path="sehemu-za-mwili" element={<SehemuZaMwili />} />
+            <Route path="time" element={<Time />} />
+            <Route path="vocabulary" element={<Vocabulary />} />
           </Route>
 
           <Route path="/" element={<Home />} />

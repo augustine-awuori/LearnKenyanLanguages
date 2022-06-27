@@ -17,6 +17,8 @@ export default function SehemuZaMwiliSection() {
       <PageNavigators
         previousSectionName="Familia"
         previousUrl="/basic/familia"
+        nextSectionName="Time"
+        nextUrl="/basic/time"
       />
     </section>
   );
