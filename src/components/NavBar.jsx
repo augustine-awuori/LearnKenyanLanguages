@@ -6,7 +6,7 @@ import logo from "../assets/logo.jpg";
 import menu from "../assets/icons/menu.svg";
 
 export default function NavBar() {
-  const [isExpanded, setIsExpanded] = useState();
+  const [isExpanded, setIsExpanded] = useState(false);
   const [collapsibleClassName, setCollapsibleClassName] =
     useState("list nav__list ");
 

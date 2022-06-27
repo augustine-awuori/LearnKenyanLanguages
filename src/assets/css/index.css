@@ -391,6 +391,7 @@ a {
 
 .nav__item:hover {
   background: var(--color-light);
+  font-weight: 600;
 }
 
 .nav__logo {
