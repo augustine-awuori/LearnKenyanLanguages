@@ -15,7 +15,7 @@ const contents = [
     heading: "Other useful phrases that will come in handy",
     url: "/basic/useful-phrases",
   },
-  { heading: "Tarakimu", url: "/tarakimu" },
+  { heading: "Tarakimu", url: "/basic/tarakimu" },
   {
     heading: "Siku za Wiki (Days of the week)",
     url: "/basic/siku-za-wiki",

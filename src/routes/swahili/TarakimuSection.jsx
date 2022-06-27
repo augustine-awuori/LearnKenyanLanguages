@@ -17,8 +17,8 @@ export default function TarakimuSection() {
       <PageNavigators
         nextSectionName="Siku za Wiki"
         previousSectionName="Other useful phrases that come in handy"
-        nextUrl="/siku-za-wiki"
-        previousUrl="/useful-phrases"
+        nextUrl="/basic/siku-za-wiki"
+        previousUrl="/basic/useful-phrases"
       />
     </section>
   );
