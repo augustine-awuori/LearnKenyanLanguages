@@ -30,8 +30,8 @@ export default function SikuZaWikiSection() {
       <PageNavigators
         nextSectionName="Miezi ya Mwaka"
         previousSectionName="Tarakimu"
-        nextUrl="/miezi-ya-mwaka"
-        previousUrl="/tarakimu"
+        nextUrl="/basic/miezi-ya-mwaka"
+        previousUrl="/basic/tarakimu"
       />
     </>
   );

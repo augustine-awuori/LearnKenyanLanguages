@@ -14,7 +14,10 @@ export default function SehemuZaMwiliSection() {
       {data.map(({ english, swahili }) => (
         <SwahiliEnglish english={english} swahili={swahili} />
       ))}
-      <PageNavigators previousSectionName="Familia" previousUrl="/familia" />
+      <PageNavigators
+        previousSectionName="Familia"
+        previousUrl="/basic/familia"
+      />
     </section>
   );
 }

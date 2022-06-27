@@ -33,8 +33,8 @@ export default function MieziYaMwakaSection() {
         </>
       ))}
       <PageNavigators
-        nextUrl="/familia"
-        previousUrl="/siku-za-wiki"
+        nextUrl="/basic/familia"
+        previousUrl="/basic/siku-za-wiki"
         nextSectionName="Familia"
         previousSectionName="Siku za wiki"
       />

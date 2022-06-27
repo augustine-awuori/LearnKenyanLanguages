@@ -17,8 +17,8 @@ export default function GoodnightInSwahiliSection() {
       <PageNavigators
         nextSectionName="Other useful phrases that come in handy"
         previousSectionName="Bidding goodbye in Swahili"
-        nextUrl="/useful-phrases"
-        previousUrl="/bidding-goodbye"
+        nextUrl="/basic/useful-phrases"
+        previousUrl="/basic/bidding-goodbye"
       />
     </>
   );

@@ -16,8 +16,8 @@ export default function FamiliaSection() {
       ))}
       <PageNavigators
         nextSectionName="Sehemu ya mwili"
-        nextUrl="/sehemu-za-mwili"
-        previousUrl="/miezi-ya-mwaka"
+        nextUrl="/basic/sehemu-za-mwili"
+        previousUrl="/basic/miezi-ya-mwaka"
         previousSectionName="Miezi ya Mwaka"
       />
     </section>

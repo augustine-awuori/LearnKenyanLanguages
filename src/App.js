@@ -23,6 +23,7 @@ import {
 import NavBar from "./components/NavBar";
 import NotFound from "./components/NotFound";
 import SwahiliSectionsHeader from "./components/SwahiliSectionsHeader";
+import SelectLevel from "./components/SelectLevel";
 
 export default function App() {
   return (
@@ -36,7 +37,12 @@ export default function App() {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/log-out" element={<Logout />} />
 
-          <Route path="/learn-swahili" element={<SwahiliSectionsHeader />}>
+          <Route path="/learn-swahili" element={<SelectLevel />} />
+
+          <Route
+            path="/learn-swahili/basic"
+            element={<SwahiliSectionsHeader />}
+          >
             <Route index element={<MaamkiziGreetings />} />
             <Route path="bidding-goodbye" element={<BiddingGoodbye />} />
             <Route path="goodnight" element={<GoodnightInSwahili />} />

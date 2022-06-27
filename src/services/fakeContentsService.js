@@ -1,36 +1,36 @@
 const contents = [
   {
     heading: "Maamkizi Greetings",
-    url: "/",
+    url: "/basic",
   },
   {
     heading: "Bidding Goodbye in Swahili",
-    url: "/bidding-goodbye",
+    url: "/basic/bidding-goodbye",
   },
   {
     heading: "Goodnight in Swahili",
-    url: "/goodnight",
+    url: "/basic/goodnight",
   },
   {
     heading: "Other useful phrases that will come in handy",
-    url: "/useful-phrases",
+    url: "/basic/useful-phrases",
   },
   { heading: "Tarakimu", url: "/tarakimu" },
   {
     heading: "Siku za Wiki (Days of the week)",
-    url: "/siku-za-wiki",
+    url: "/basic/siku-za-wiki",
   },
   {
     heading: "Miezi ya Mwaka (Months of the year)",
-    url: "/miezi-ya-mwaka",
+    url: "/basic/miezi-ya-mwaka",
   },
   {
     heading: "Familia (Family)",
-    url: "/familia",
+    url: "/basic/familia",
   },
   {
     heading: "Sehemu za Mwili",
-    url: "/sehemu-za-mwili",
+    url: "/basic/sehemu-za-mwili",
   },
 ];
 

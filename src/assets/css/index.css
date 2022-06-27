@@ -559,3 +559,56 @@ a {
     width: 35%;
   }
 }
+
+/* Card */
+.card {
+  border-radius: 30px;
+  border: 0.5px solid var(--color-headings);
+  cursor: pointer;
+  margin: 3rem auto;
+  max-width: 50rem;
+  overflow: hidden;
+  padding: 1.5rem;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  width: 100%;
+}
+
+.card:hover {
+  border: 2px solid var(--color-headings);
+  box-shadow: 0 0 30px 20px var(--color-light);
+  padding: 1rem 2rem;
+  transform: scale(1.01);
+}
+
+.card__image {
+  transition: scale 1s;
+  width: 100%;
+}
+
+.card__image:hover {
+  transform: scale(1.1);
+}
+
+.card__heading {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card:hover .card__heading {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+  .levels {
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+  }
+
+  .card {
+    margin: 2rem;
+    /* min-width: none; */
+  }
+}

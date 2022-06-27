@@ -17,8 +17,8 @@ export default function Phrases() {
       <PageNavigators
         nextSectionName="Tarakimu"
         previousSectionName="Goodnight in swahili"
-        nextUrl="/tarakimu"
-        previousUrl="/useful-phrases"
+        nextUrl="/basic/tarakimu"
+        previousUrl="/basic/goodnight"
       />
     </>
   );

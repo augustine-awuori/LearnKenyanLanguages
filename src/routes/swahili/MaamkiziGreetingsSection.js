@@ -27,7 +27,7 @@ export default function MaamkiziGreetingsSection() {
       ))}
       <PageNavigators
         nextSectionName="Bidding goodbye"
-        nextUrl="/bidding-goodbye"
+        nextUrl="/basic/bidding-goodbye"
       />
     </section>
   );
