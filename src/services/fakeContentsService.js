@@ -1,30 +1,30 @@
 const contents = [
-  { heading: "Maamkizi Greetings", url: "/basic" },
+  { heading: "Greetings", url: "/basic" },
   {
-    heading: "Bidding Goodbye in Swahili",
+    heading: "Bidding Goodbye",
     url: "/basic/bidding-goodbye",
   },
-  { heading: "Goodnight in Swahili", url: "/basic/goodnight" },
+  { heading: "Goodnight", url: "/basic/goodnight" },
   {
-    heading: "Other useful phrases that will come in handy",
+    heading: "Useful phrases that come in handy",
     url: "/basic/useful-phrases",
   },
-  { heading: "Tarakimu", url: "/basic/tarakimu" },
+  { heading: "Numbers", url: "/basic/tarakimu" },
   {
-    heading: "Siku za Wiki (Days of the week)",
+    heading: "Days of the week",
     url: "/basic/siku-za-wiki",
   },
   {
-    heading: "Miezi ya Mwaka (Months of the year)",
+    heading: "Months of the year",
     url: "/basic/miezi-ya-mwaka",
   },
-  { heading: "Familia (Family)", url: "/basic/familia" },
+  { heading: "Family", url: "/basic/familia" },
   {
-    heading: "Sehemu za Mwili",
+    heading: "Body Parts",
     url: "/basic/sehemu-za-mwili",
   },
-  { heading: "Time", url: "/basic/time" },
-  { heading: "Vocabulary", url: "/basic/vocabulary" },
+  { heading: "Time of the Day", url: "/basic/time" },
+  { heading: "Vocabularies", url: "/basic/vocabulary" },
   { heading: "Telling Time", url: "/basic/telling-time" },
   { heading: "Various Personalities", url: "/basic/various-personalities" },
   {
@@ -32,7 +32,7 @@ const contents = [
     url: "/basic/daily-activities-and-chores",
   },
   { heading: "Colors", url: "/basic/colors" },
-  { heading: "Food (Chakula)", url: "/basic/food" },
+  { heading: "Food", url: "/basic/food" },
   { heading: "Spices", url: "/basic/spices" },
   { heading: "Personal Pronouns", url: "/basic/personal-pronouns" },
 ];
