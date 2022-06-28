@@ -26,6 +26,7 @@ import SelectLevel from "./components/SelectLevel";
 import SwahiliSectionsHeader from "./components/SwahiliSectionsHeader";
 import TellingTime from "./routes/swahili/TellingTime";
 import Time from "./routes/swahili/Time";
+import VariousPersonaities from "./routes/swahili/VariousPersonaities";
 import Vocabulary from "./routes/swahili/Vocabulary";
 
 export default function App() {
@@ -58,6 +59,10 @@ export default function App() {
             <Route path="time" element={<Time />} />
             <Route path="vocabulary" element={<Vocabulary />} />
             <Route path="telling-time" element={<TellingTime />} />
+            <Route
+              path="various-personalities"
+              element={<VariousPersonaities />}
+            />
           </Route>
 
           <Route path="/" element={<Home />} />

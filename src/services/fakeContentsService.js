@@ -38,6 +38,7 @@ const contents = [
   },
   { heading: "Vocabulary", url: "/basic/vocabulary" },
   { heading: "Telling Time", url: "/basic/telling-time" },
+  { heading: "Various Personalities", url: "/basic/various-personalities" },
 ];
 
 const getContents = () => contents;
