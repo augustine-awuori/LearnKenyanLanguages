@@ -29,6 +29,7 @@ import TellingTime from "./routes/swahili/TellingTime";
 import Time from "./routes/swahili/Time";
 import VariousPersonaities from "./routes/swahili/VariousPersonaities";
 import Vocabulary from "./routes/swahili/Vocabulary";
+import ColorsSection from "./routes/swahili/ColorsSection";
 
 export default function App() {
   return (
@@ -68,6 +69,7 @@ export default function App() {
               path="daily-activities-and-chores"
               element={<DailyActivities />}
             />
+            <Route path="colors" element={<ColorsSection />} />
           </Route>
 
           <Route path="/" element={<Home />} />

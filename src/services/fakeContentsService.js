@@ -31,6 +31,7 @@ const contents = [
     heading: "Daily Activities and Chores",
     url: "/basic/daily-activities-and-chores",
   },
+  { heading: "Colors", url: "/basic/colors" },
 ];
 
 const getContents = () => contents;
