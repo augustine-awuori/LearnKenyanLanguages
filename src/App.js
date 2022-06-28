@@ -11,6 +11,15 @@ import {
   SehemuZaMwili,
   SikuZaWiki,
   Tarakimu,
+  ColorsSection,
+  DailyActivities,
+  FoodSection,
+  PersonalPronouns,
+  Spices as SpicesSection,
+  TellingTime,
+  TimeOfTheDay,
+  VariousPersonalities,
+  Vocabularies,
 } from "./routes/swahili";
 import {
   ContactUs,
@@ -20,19 +29,10 @@ import {
   PartnerWithUs,
   RegisterForm,
 } from "./routes";
-import DailyActivities from "./routes/swahili/DailyActivities";
 import NavBar from "./components/NavBar";
 import NotFound from "./components/NotFound";
 import SelectLevel from "./components/SelectLevel";
 import SwahiliSectionsHeader from "./components/SwahiliSectionsHeader";
-import TellingTime from "./routes/swahili/TellingTime";
-import Time from "./routes/swahili/Time";
-import VariousPersonaities from "./routes/swahili/VariousPersonaities";
-import Vocabulary from "./routes/swahili/Vocabulary";
-import ColorsSection from "./routes/swahili/ColorsSection";
-import FoodSection from "./routes/swahili/FoodSection";
-import SpicesSection from "./routes/swahili/SpicesSection";
-import PersonalPronouns from "./routes/swahili/PersonalPronouns";
 
 export default function App() {
   return (
@@ -61,12 +61,12 @@ export default function App() {
             <Route path="miezi-ya-mwaka" element={<MieziYaMwaka />} />
             <Route path="familia" element={<Familia />} />
             <Route path="sehemu-za-mwili" element={<SehemuZaMwili />} />
-            <Route path="time" element={<Time />} />
-            <Route path="vocabulary" element={<Vocabulary />} />
+            <Route path="time" element={<TimeOfTheDay />} />
+            <Route path="vocabulary" element={<Vocabularies />} />
             <Route path="telling-time" element={<TellingTime />} />
             <Route
               path="various-personalities"
-              element={<VariousPersonaities />}
+              element={<VariousPersonalities />}
             />
             <Route
               path="daily-activities-and-chores"
