@@ -20,6 +20,7 @@ import {
   PartnerWithUs,
   RegisterForm,
 } from "./routes";
+import DailyActivities from "./routes/swahili/DailyActivities";
 import NavBar from "./components/NavBar";
 import NotFound from "./components/NotFound";
 import SelectLevel from "./components/SelectLevel";
@@ -62,6 +63,10 @@ export default function App() {
             <Route
               path="various-personalities"
               element={<VariousPersonaities />}
+            />
+            <Route
+              path="daily-activities-and-chores"
+              element={<DailyActivities />}
             />
           </Route>
 

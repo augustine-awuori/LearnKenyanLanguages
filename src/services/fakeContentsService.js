@@ -1,16 +1,10 @@
 const contents = [
-  {
-    heading: "Maamkizi Greetings",
-    url: "/basic",
-  },
+  { heading: "Maamkizi Greetings", url: "/basic" },
   {
     heading: "Bidding Goodbye in Swahili",
     url: "/basic/bidding-goodbye",
   },
-  {
-    heading: "Goodnight in Swahili",
-    url: "/basic/goodnight",
-  },
+  { heading: "Goodnight in Swahili", url: "/basic/goodnight" },
   {
     heading: "Other useful phrases that will come in handy",
     url: "/basic/useful-phrases",
@@ -24,21 +18,19 @@ const contents = [
     heading: "Miezi ya Mwaka (Months of the year)",
     url: "/basic/miezi-ya-mwaka",
   },
-  {
-    heading: "Familia (Family)",
-    url: "/basic/familia",
-  },
+  { heading: "Familia (Family)", url: "/basic/familia" },
   {
     heading: "Sehemu za Mwili",
     url: "/basic/sehemu-za-mwili",
   },
-  {
-    heading: "Time",
-    url: "/basic/time",
-  },
+  { heading: "Time", url: "/basic/time" },
   { heading: "Vocabulary", url: "/basic/vocabulary" },
   { heading: "Telling Time", url: "/basic/telling-time" },
   { heading: "Various Personalities", url: "/basic/various-personalities" },
+  {
+    heading: "Daily Activities and Chores",
+    url: "/basic/daily-activities-and-chores",
+  },
 ];
 
 const getContents = () => contents;
