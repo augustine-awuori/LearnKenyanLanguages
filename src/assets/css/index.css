@@ -126,6 +126,14 @@ a {
 
 .content {
   margin: 0.8rem 0;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+}
+
+.content:hover {
+  background: #c8c4d6;
+  color: var(--color-headings);
+  padding-left: 1rem;
+  transform: scale(1.01);
 }
 
 /* Maamkizi Section */

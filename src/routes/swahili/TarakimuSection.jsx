@@ -10,7 +10,7 @@ export default function TarakimuSection() {
 
   return (
     <section className="tarakimu">
-      <h2>Tarakimu</h2>
+      <h2>Tarakimu (Numbers)</h2>
       {data.map(({ numbers, heading }) => (
         <Table
           key={heading}
