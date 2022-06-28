@@ -14,8 +14,8 @@ const mieziYaMwaka = [
 ];
 
 const notes = [
-  { swahili: "Mwaka", english: "Date" },
-  { swahili: "Tarehe", english: "Year" },
+  { swahili: "Mwaka", english: "Year" },
+  { swahili: "Tarehe", english: "Date" },
   { swahili: "mwezi / miezi", english: "Year(s)" },
   { swahili: "Zaliwa", english: "to be born" },
   { swahili: "Lini", english: "When" },
