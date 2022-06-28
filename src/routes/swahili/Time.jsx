@@ -10,7 +10,7 @@ export default function Time() {
 
   return (
     <section>
-      <h2>Wakati (Time)</h2>
+      <h2>Wakati (Time of the Day)</h2>
       {mapSwahiliEnglish(data)}
       <PageNavigators
         nextSectionName="Vocabulary"

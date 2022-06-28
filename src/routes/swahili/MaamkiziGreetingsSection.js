@@ -4,16 +4,9 @@ import { getGreetingsResponse } from "../../services/fakeMaamkiziGreetingsRespon
 import PageNavigators from "../../navigation/PageNavigators";
 import SwahiliEnglish from "../../components/SwahiliEnglish";
 import useApi from "../../hooks/useApi";
-import { getContents } from "../../services/fakeContentsService";
 
 export default function MaamkiziGreetingsSection() {
   const { data } = useApi(getGreetingsResponse);
-  const { data: contents } = useApi(getContents);
-
-  const find = () => {
-    console.log(contents);
-  };
-  find();
 
   return (
     <section className="maamkizi">

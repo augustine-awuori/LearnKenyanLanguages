@@ -17,7 +17,7 @@ export default function MieziYaMwakaSection() {
 
   return (
     <section className="miezi-ya-mwaka">
-      <h2>Miezi Ya Mwaka</h2>
+      <h2>Miezi Ya Mwaka (Months of the Year)</h2>
       {mapSwahiliEnglish(miezi)}
       <h3>Note</h3>
       {mapSwahiliEnglish(notes, EnglishSwahiliInline)}
