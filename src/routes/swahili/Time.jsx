@@ -1,19 +1,17 @@
 import React from "react";
 
 import { getTime } from "../../services/fakeTimeService";
-import SwahiliEnglish from "../../components/SwahiliEnglish";
-import useApi from "../../hooks/useApi";
+import mapSwahiliEnglish from "../../components/mapSwahiliEnglish";
 import PageNavigators from "../../navigation/PageNavigators";
+import useApi from "../../hooks/useApi";
 
 export default function Time() {
   const { data } = useApi(getTime);
 
   return (
     <section>
-      <h2>Wakati</h2>
-      {data.map(({ swahili, english }) => (
-        <SwahiliEnglish swahili={swahili} english={english} />
-      ))}
+      <h2>Wakati (Time)</h2>
+      {mapSwahiliEnglish(data)}
       <PageNavigators
         nextSectionName="Vocabulary"
         previousSectionName="Sehemu Za Mwili"

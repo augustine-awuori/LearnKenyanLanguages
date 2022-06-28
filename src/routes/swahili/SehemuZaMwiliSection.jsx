@@ -1,8 +1,8 @@
 import React from "react";
 
 import { getSehemuZaMwili } from "../../services/fakeSehemuZaMwiliService";
+import mapSwahiliEnglish from "../../components/mapSwahiliEnglish";
 import PageNavigators from "../../navigation/PageNavigators";
-import SwahiliEnglish from "../../components/SwahiliEnglish";
 import useApi from "../../hooks/useApi";
 
 export default function SehemuZaMwiliSection() {
@@ -11,9 +11,7 @@ export default function SehemuZaMwiliSection() {
   return (
     <section>
       <h2>Sehemu Za Mwili</h2>
-      {data.map(({ english, swahili }) => (
-        <SwahiliEnglish english={english} swahili={swahili} />
-      ))}
+      {mapSwahiliEnglish(data)}
       <PageNavigators
         previousSectionName="Familia"
         previousUrl="/basic/familia"
