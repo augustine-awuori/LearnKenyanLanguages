@@ -32,6 +32,7 @@ import Vocabulary from "./routes/swahili/Vocabulary";
 import ColorsSection from "./routes/swahili/ColorsSection";
 import FoodSection from "./routes/swahili/FoodSection";
 import SpicesSection from "./routes/swahili/SpicesSection";
+import PersonalPronouns from "./routes/swahili/PersonalPronouns";
 
 export default function App() {
   return (
@@ -74,6 +75,7 @@ export default function App() {
             <Route path="colors" element={<ColorsSection />} />
             <Route path="food" element={<FoodSection />} />
             <Route path="spices" element={<SpicesSection />} />
+            <Route path="personal-pronouns" element={<PersonalPronouns />} />
           </Route>
 
           <Route path="/" element={<Home />} />

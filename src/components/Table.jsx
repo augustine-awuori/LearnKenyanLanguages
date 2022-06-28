@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Table({
-  data,
+  data = [],
   heading,
   leftTableHeading,
   rightTableHeading,
