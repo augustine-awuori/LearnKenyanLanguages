@@ -33,6 +33,7 @@ const contents = [
   },
   { heading: "Colors", url: "/basic/colors" },
   { heading: "Food (Chakula)", url: "/basic/food" },
+  { heading: "Spices", url: "/basic/spices" },
 ];
 
 const getContents = () => contents;
