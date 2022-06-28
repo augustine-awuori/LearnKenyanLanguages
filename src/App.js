@@ -30,6 +30,7 @@ import Time from "./routes/swahili/Time";
 import VariousPersonaities from "./routes/swahili/VariousPersonaities";
 import Vocabulary from "./routes/swahili/Vocabulary";
 import ColorsSection from "./routes/swahili/ColorsSection";
+import FoodSection from "./routes/swahili/FoodSection";
 
 export default function App() {
   return (
@@ -70,6 +71,7 @@ export default function App() {
               element={<DailyActivities />}
             />
             <Route path="colors" element={<ColorsSection />} />
+            <Route path="food" element={<FoodSection />} />
           </Route>
 
           <Route path="/" element={<Home />} />

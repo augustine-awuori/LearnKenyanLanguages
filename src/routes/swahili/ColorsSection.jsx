@@ -13,9 +13,9 @@ export default function ColorsSection() {
       <h2>Colors (Rangi)</h2>
       {mapSwahiliEnglish(data)}
       <PageNavigators
-        nextSectionName="Clothes"
+        nextSectionName="Food"
         previousSectionName="Daily Activities and Chores"
-        nextUrl="/basic/clothes"
+        nextUrl="/basic/food"
         previousUrl="/basic/daily-activities-and-chores"
       />
     </section>

@@ -32,6 +32,7 @@ const contents = [
     url: "/basic/daily-activities-and-chores",
   },
   { heading: "Colors", url: "/basic/colors" },
+  { heading: "Food (Chakula)", url: "/basic/food" },
 ];
 
 const getContents = () => contents;
