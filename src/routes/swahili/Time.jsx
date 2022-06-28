@@ -10,6 +10,7 @@ export default function Time() {
 
   return (
     <section>
+      <h2>Wakati</h2>
       {data.map(({ swahili, english }) => (
         <SwahiliEnglish swahili={swahili} english={english} />
       ))}
