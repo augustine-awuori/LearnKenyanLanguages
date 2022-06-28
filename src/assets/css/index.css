@@ -204,6 +204,10 @@ a {
   width: 100%;
 }
 
+.table__heading {
+  text-transform: capitalize;
+}
+
 .table thead tr {
   background-color: #009879;
   color: #fff;

@@ -36,10 +36,8 @@ const contents = [
     heading: "Time",
     url: "/basic/time",
   },
-  {
-    heading: "Vocabulary",
-    url: "/basic/vocabulary",
-  },
+  { heading: "Vocabulary", url: "/basic/vocabulary" },
+  { heading: "Telling Time", url: "/basic/telling-time" },
 ];
 
 const getContents = () => contents;

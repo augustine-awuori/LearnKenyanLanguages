@@ -12,7 +12,13 @@ export default function TarakimuSection() {
     <section className="tarakimu">
       <h2>Tarakimu</h2>
       {data.map(({ numbers, heading }) => (
-        <Table key={heading} data={numbers} heading={heading} />
+        <Table
+          key={heading}
+          data={numbers}
+          heading={heading}
+          leftTableHeading="tarakimu"
+          rightTableHeading="neno"
+        />
       ))}
       <PageNavigators
         nextSectionName="Siku za Wiki"

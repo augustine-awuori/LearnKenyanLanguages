@@ -22,8 +22,9 @@ import {
 } from "./routes";
 import NavBar from "./components/NavBar";
 import NotFound from "./components/NotFound";
-import SwahiliSectionsHeader from "./components/SwahiliSectionsHeader";
 import SelectLevel from "./components/SelectLevel";
+import SwahiliSectionsHeader from "./components/SwahiliSectionsHeader";
+import TellingTime from "./routes/swahili/TellingTime";
 import Time from "./routes/swahili/Time";
 import Vocabulary from "./routes/swahili/Vocabulary";
 
@@ -56,6 +57,7 @@ export default function App() {
             <Route path="sehemu-za-mwili" element={<SehemuZaMwili />} />
             <Route path="time" element={<Time />} />
             <Route path="vocabulary" element={<Vocabulary />} />
+            <Route path="telling-time" element={<TellingTime />} />
           </Route>
 
           <Route path="/" element={<Home />} />
