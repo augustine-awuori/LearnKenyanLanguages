@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      {data.map((c) => (
+      {data.map(({ content, heading, targetPageUrl, image }) => (
         <Callout
-          content={c.content}
-          heading={c.heading}
-          targetPageUrl={c.targetPageUrl}
-          image={c.image}
+          content={content}
+          heading={heading}
+          targetPageUrl={targetPageUrl}
+          image={image}
         />
       ))}
     </main>

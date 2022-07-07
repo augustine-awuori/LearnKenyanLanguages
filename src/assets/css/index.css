@@ -448,7 +448,7 @@ a {
   align-items: center;
   background-attachment: fixed;
   background-size: cover;
-  background: url(../background.svg);
+  background: url(../icons/background.svg);
   height: 100vh;
   justify-content: center;
   width: 100%;

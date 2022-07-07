@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import cancel from "../assets/icons/cancel.svg";
-import logo from "../assets/logo.jpg";
+import logo from "../assets/images/logo.jpg";
 import menu from "../assets/icons/menu.svg";
 
 export default function NavBar() {
@@ -17,7 +17,7 @@ export default function NavBar() {
     }
 
     setCollapsibleClassName(collapsibleClassName + getNavItemsName());
-  }, [isExpanded]);
+  }, [collapsibleClassName, isExpanded]);
 
   const switchExpansion = () => setIsExpanded(!isExpanded);
 
