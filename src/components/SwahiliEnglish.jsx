@@ -3,7 +3,7 @@ import React from "react";
 import useChevron from "../hooks/useChevron";
 
 export default function SwahiliEnglish({ english, swahili }) {
-  const { isExpanded, getChevron, toggleExpansion } = useChevron();
+  const { chevron, isExpanded, toggleExpansion } = useChevron();
 
   return (
     <article className="swahili-english">
@@ -12,7 +12,7 @@ export default function SwahiliEnglish({ english, swahili }) {
         onClick={toggleExpansion}
       >
         <p className="swahili-english__swahili">{swahili}</p>
-        <img src={getChevron()} alt="chevron icon" className="icon" />
+        <img src={chevron} alt="chevron icon" className="icon" />
       </section>
       {isExpanded && (
         <p className="translation swahili-english__english">{english}</p>

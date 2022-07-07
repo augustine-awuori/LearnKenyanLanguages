@@ -6,9 +6,9 @@ import chevronRight from "../assets/icons/chevron-right.svg";
 export default function UseChevron() {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const getChevron = () => (isExpanded ? chevronDown : chevronRight);
+  const chevron = isExpanded ? chevronDown : chevronRight;
 
   const toggleExpansion = () => setIsExpanded(!isExpanded);
 
-  return { isExpanded, getChevron, toggleExpansion };
+  return { chevron, isExpanded, toggleExpansion };
 }

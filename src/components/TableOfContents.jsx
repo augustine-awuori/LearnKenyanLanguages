@@ -6,7 +6,7 @@ import UseChevron from "../hooks/useChevron";
 
 export default function TableOfContents() {
   const [contents, setContents] = useState([]);
-  const { isExpanded, getChevron, toggleExpansion } = UseChevron();
+  const { chevron, isExpanded, toggleExpansion } = UseChevron();
 
   useEffect(() => {
     setContents(getContents());
@@ -17,7 +17,7 @@ export default function TableOfContents() {
       <article>
         <section className="tableOfContent__header">
           <p className="tableOfContent__heading">On this page</p>
-          <img className="icon" src={getChevron()} alt="chevron icon" />
+          <img className="icon" src={chevron} alt="chevron icon" />
         </section>
         {isExpanded && <TableContents contents={contents} />}
       </article>
