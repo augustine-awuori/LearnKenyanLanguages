@@ -380,9 +380,11 @@ a {
 .nav {
   align-items: center;
   background: #fff;
+  box-shadow: 0 0 5px var(--color-body);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  opacity: 0.98;
   padding: 0 1rem;
   position: fixed;
   top: 0;
