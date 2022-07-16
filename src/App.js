@@ -29,7 +29,7 @@ import {
   PartnerWithUs,
   RegisterForm,
 } from "./routes";
-import { KikambaMaamkizi } from "./routes/kikamba";
+import { KikambaBiddingGoodbye, KikambaMaamkizi } from "./routes/kikamba";
 import NavBar from "./components/NavBar";
 import NotFound from "./components/NotFound";
 import SelectLevel from "./components/SelectLevel";
@@ -82,6 +82,7 @@ export default function App() {
 
           <Route path="/learn-kikamba" element={<KambaSectionsHeader />}>
             <Route index element={<KikambaMaamkizi />} />
+            <Route path="bidding-goodbye" element={<KikambaBiddingGoodbye />} />
           </Route>
 
           <Route path="/" element={<Home />} />

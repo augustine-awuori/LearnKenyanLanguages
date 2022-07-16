@@ -1,6 +1,6 @@
 const contents = [
   { heading: "Maamkizi / Ngethi", url: "" },
-  { heading: "Bidding Goodbye", url: "" },
+  { heading: "Bidding Goodbye", url: "/bidding-goodbye" },
   { heading: "Goodnight in Swahili", url: "" },
   { heading: "Other Useful Phrases", url: "" },
   { heading: "Numbers", url: "" },
