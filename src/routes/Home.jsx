@@ -13,6 +13,7 @@ export default function Home() {
       <Hero />
       {data.map(({ content, heading, targetPageUrl, image }) => (
         <Callout
+          key={heading}
           content={content}
           heading={heading}
           targetPageUrl={targetPageUrl}

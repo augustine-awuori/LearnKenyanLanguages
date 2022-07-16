@@ -3,7 +3,7 @@ import React from "react";
 import {
   getAllPronouns,
   getPronounsMfano,
-} from "../../services/fakePersonalPronounService";
+} from "../../services/swahiliServices/fakePersonalPronounService";
 import mapSwahiliEnglish from "../../components/mapSwahiliEnglish";
 import Table from "../../components/Table";
 import useApi from "../../hooks/useApi";

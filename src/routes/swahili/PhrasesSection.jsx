@@ -1,6 +1,6 @@
 import React from "react";
 
-import { getPhrases } from "../../services/fakePhrasesService";
+import { getPhrases } from "../../services/swahiliServices/fakePhrasesService";
 import mapSwahiliEnglish from "../../components/mapSwahiliEnglish";
 import PageNavigators from "../../navigation/PageNavigators";
 import useApi from "../../hooks/useApi";

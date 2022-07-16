@@ -1,6 +1,6 @@
 import React from "react";
 
-import { getAllNumbers } from "../../services/fakeNumbersService";
+import { getAllNumbers } from "../../services/swahiliServices/fakeNumbersService";
 import Table from "../../components/Table";
 import PageNavigators from "../../navigation/PageNavigators";
 import useApi from "../../hooks/useApi";

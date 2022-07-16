@@ -4,7 +4,7 @@ import {
   getNotes,
   getMieziYaMwaka,
   getMazoezi,
-} from "../../services/fakeMieziYaMwakaService";
+} from "../../services/swahiliServices/fakeMieziYaMwakaService";
 import EnglishSwahiliInline from "../../components/EnglishSwahiliInline";
 import mapSwahiliEnglish from "../../components/mapSwahiliEnglish";
 import PageNavigators from "../../navigation/PageNavigators";

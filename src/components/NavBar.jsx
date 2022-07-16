@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import cancel from "../assets/icons/cancel.svg";
 import logo from "../assets/images/logo.jpg";
 import menu from "../assets/icons/menu.svg";
-
+// TODO: Redesign this component
 export default function NavBar() {
   const [isExpanded, setIsExpanded] = useState(false);
   const [collapsibleClassName, setCollapsibleClassName] =

@@ -1,6 +1,9 @@
 import React from "react";
 
-import { getMaswali, getTellingTime } from "../../services/fakeTellingTime";
+import {
+  getMaswali,
+  getTellingTime,
+} from "../../services/swahiliServices/fakeTellingTime";
 import Table from "../../components/Table";
 import useApi from "../../hooks/useApi";
 import PageNavigators from "../../navigation/PageNavigators";

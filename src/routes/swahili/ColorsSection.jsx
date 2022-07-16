@@ -1,6 +1,6 @@
 import React from "react";
 
-import { getColors } from "../../services/fakeColorsService";
+import { getColors } from "../../services/swahiliServices/fakeColorsService";
 import mapSwahiliEnglish from "../../components/mapSwahiliEnglish";
 import PageNavigators from "../../navigation/PageNavigators";
 import useApi from "../../hooks/useApi";

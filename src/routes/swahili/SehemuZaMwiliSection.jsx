@@ -1,6 +1,6 @@
 import React from "react";
 
-import { getSehemuZaMwili } from "../../services/fakeSehemuZaMwiliService";
+import { getSehemuZaMwili } from "../../services/swahiliServices/fakeSehemuZaMwiliService";
 import mapSwahiliEnglish from "../../components/mapSwahiliEnglish";
 import PageNavigators from "../../navigation/PageNavigators";
 import useApi from "../../hooks/useApi";

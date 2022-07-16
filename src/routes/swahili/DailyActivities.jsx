@@ -3,7 +3,7 @@ import React from "react";
 import {
   getActivities,
   getChores,
-} from "../../services/fakeDailyActivitiesAndChoresService";
+} from "../../services/swahiliServices/fakeDailyActivitiesAndChoresService";
 import mapSwahiliEnglish from "../../components/mapSwahiliEnglish";
 import useApi from "../../hooks/useApi";
 import PageNavigators from "../../navigation/PageNavigators";

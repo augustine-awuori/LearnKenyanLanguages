@@ -1,6 +1,6 @@
 import React from "react";
 
-import { getVocabulary } from "../../services/fakeVocabularyService";
+import { getVocabulary } from "../../services/swahiliServices/fakeVocabularyService";
 import useApi from "../../hooks/useApi";
 import PageNavigators from "../../navigation/PageNavigators";
 

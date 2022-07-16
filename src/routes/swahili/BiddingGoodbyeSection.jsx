@@ -1,6 +1,6 @@
 import React from "react";
 
-import { getGoodByes } from "../../services/fakeBiddingGoodbyeService";
+import { getGoodByes } from "../../services/swahiliServices/fakeBiddingGoodbyeService";
 import mapSwahiliEnglish from "../../components/mapSwahiliEnglish";
 import PageNavigators from "../../navigation/PageNavigators";
 import useApi from "../../hooks/useApi";

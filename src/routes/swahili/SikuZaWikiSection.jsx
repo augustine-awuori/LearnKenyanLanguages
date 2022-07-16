@@ -3,7 +3,7 @@ import React from "react";
 import {
   getMazoezi,
   getSikuZaWiki,
-} from "../../services/fakeSikuZaWikiService";
+} from "../../services/swahiliServices/fakeSikuZaWikiService";
 import mapSwahiliEnglish from "../../components/mapSwahiliEnglish";
 import PageNavigators from "../../navigation/PageNavigators";
 import useApi from "../../hooks/useApi";

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { getTime } from "../../services/fakeTimeService";
+import { getTime } from "../../services/swahiliServices/fakeTimeService";
 import mapSwahiliEnglish from "../../components/mapSwahiliEnglish";
 import PageNavigators from "../../navigation/PageNavigators";
 import useApi from "../../hooks/useApi";

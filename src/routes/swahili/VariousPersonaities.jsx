@@ -1,6 +1,6 @@
 import React from "react";
 
-import { getPersonalities } from "../../services/fakePersonalitiesService";
+import { getPersonalities } from "../../services/swahiliServices/fakePersonalitiesService";
 import PageNavigators from "../../navigation/PageNavigators";
 import Table from "../../components/Table";
 import useApi from "../../hooks/useApi";

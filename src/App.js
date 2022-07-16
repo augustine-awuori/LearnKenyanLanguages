@@ -33,6 +33,7 @@ import NavBar from "./components/NavBar";
 import NotFound from "./components/NotFound";
 import SelectLevel from "./components/SelectLevel";
 import SwahiliSectionsHeader from "./components/SwahiliSectionsHeader";
+import KambaSectionsHeader from "./components/KambaSectionsHeader";
 
 export default function App() {
   return (
@@ -77,6 +78,11 @@ export default function App() {
             <Route path="spices" element={<SpicesSection />} />
             <Route path="personal-pronouns" element={<PersonalPronouns />} />
           </Route>
+
+          <Route
+            path="/learn-kikamba"
+            element={<KambaSectionsHeader />}
+          ></Route>
 
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />

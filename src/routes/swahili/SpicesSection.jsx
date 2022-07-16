@@ -1,6 +1,6 @@
 import React from "react";
 
-import { getSpices } from "../../services/fakeSpicesSection";
+import { getSpices } from "../../services/swahiliServices/fakeSpicesSection";
 import mapSwahiliEnglish from "../../components/mapSwahiliEnglish";
 import PageNavigators from "../../navigation/PageNavigators";
 import useApi from "../../hooks/useApi";

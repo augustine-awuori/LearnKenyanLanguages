@@ -1,6 +1,6 @@
 import React from "react";
 
-import { getFamilia } from "../../services/fakeFamiliaService";
+import { getFamilia } from "../../services/swahiliServices/fakeFamiliaService";
 import mapSwahiliEnglish from "../../components/mapSwahiliEnglish";
 import PageNavigators from "../../navigation/PageNavigators";
 import useApi from "../../hooks/useApi";

@@ -8,10 +8,10 @@ const callouts = [
   },
   {
     content:
-      "Kikuyu, also called Gikuyu or Agikuyu, Bantu-speaking people who live in the highland area of south-central Kenya, near Mount Kenya.",
+      "Kamba, or Kikamba, is a Bantu language spoken by millions of Kamba people, primarily in Kenya, as well as thousands of people in Uganda, Tanzania, and elsewhere.",
     heading: "Learn Kikamba",
-    targetPageUrl: "",
-    image: require("../assets/images/kikuyu.jpg"),
+    targetPageUrl: "/learn-kikamba",
+    image: require("../assets/images/kikamba.jpg"),
   },
   {
     content:

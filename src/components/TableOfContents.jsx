@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import { getContents } from "../services/fakeContentsService";
+import { getContents } from "../services/swahiliServices/fakeContentsService";
 import TableContents from "./TableContents";
 import UseChevron from "../hooks/useChevron";
 
