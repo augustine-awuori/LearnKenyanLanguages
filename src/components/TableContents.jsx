@@ -1,9 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export default function TableContent({ contents = [] }) {
-  const baseURL = "/learn-swahili";
-
+export default function TableContent({ baseURL = "/", contents = [] }) {
   return (
     <nav>
       {contents.map(({ url, heading }) => (
