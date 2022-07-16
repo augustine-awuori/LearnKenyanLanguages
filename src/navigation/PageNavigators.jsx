@@ -2,13 +2,12 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 export default function PageNavigators({
+  baseURL = "/learn-swahili",
   nextUrl = "",
   previousUrl = "",
   nextSectionName,
   previousSectionName,
 }) {
-  const baseURL = "/learn-swahili";
-
   return (
     <section className="pages-navigators">
       <section className="page-navigator">

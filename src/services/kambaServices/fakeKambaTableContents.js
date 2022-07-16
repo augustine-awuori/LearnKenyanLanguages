@@ -9,6 +9,8 @@ const contents = [
   { heading: "Parts of the Body", url: "" },
 ];
 
+const getBaseURL = () => "/learn-kikamba";
+
 const getContents = () => contents;
 
-export { getContents };
+export { getBaseURL, getContents };

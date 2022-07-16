@@ -29,6 +29,7 @@ import {
   PartnerWithUs,
   RegisterForm,
 } from "./routes";
+import { KikambaMaamkizi } from "./routes/kikamba";
 import NavBar from "./components/NavBar";
 import NotFound from "./components/NotFound";
 import SelectLevel from "./components/SelectLevel";
@@ -79,10 +80,9 @@ export default function App() {
             <Route path="personal-pronouns" element={<PersonalPronouns />} />
           </Route>
 
-          <Route
-            path="/learn-kikamba"
-            element={<KambaSectionsHeader />}
-          ></Route>
+          <Route path="/learn-kikamba" element={<KambaSectionsHeader />}>
+            <Route index element={<KikambaMaamkizi />} />
+          </Route>
 
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />

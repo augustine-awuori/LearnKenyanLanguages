@@ -4,7 +4,7 @@ import TableContents from "../components/TableContents";
 import useApi from "./useApi";
 import useChevron from "./useChevron";
 
-export default function useTableOfContents(contentsApiFunc) {
+export default function useTableOfContents(contentsApiFunc, baseURL) {
   const { data: contents } = useApi(contentsApiFunc);
   const { chevron, isExpanded, toggleExpansion } = useChevron();
 
@@ -15,7 +15,7 @@ export default function useTableOfContents(contentsApiFunc) {
           <p className="table-of-content__heading">On this page</p>
           <img className="icon" src={chevron} alt="chevron icon" />
         </header>
-        {isExpanded && <TableContents contents={contents} />}
+        {isExpanded && <TableContents baseURL={baseURL} contents={contents} />}
       </article>
     </section>
   );

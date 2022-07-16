@@ -37,6 +37,8 @@ const contents = [
   { heading: "Personal Pronouns", url: "/basic/personal-pronouns" },
 ];
 
+const getBaseURL = () => "/learn-swahili";
+
 const getContents = () => contents;
 
-export { getContents };
+export { getBaseURL, getContents };
