@@ -1,5 +1,6 @@
-import React from "react";
+import { getContents } from "../services/kambaServices/fakeKambaTableContents";
+import useTableOfContents from "../hooks/useTableOfContents";
 
 export default function KambaTableOfContents() {
-  return <header>KambaTableOfContents</header>;
+  return useTableOfContents(getContents);
 }
