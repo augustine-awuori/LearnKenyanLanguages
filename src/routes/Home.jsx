@@ -1,6 +1,6 @@
 import React from "react";
 
-import { getCallouts } from "../services/fakeCalloutService";
+import { getCallouts } from "../services/swahiliServices/fakeCalloutService";
 import Callout from "../components/Callout";
 import Hero from "../components/Hero";
 import useApi from "../hooks/useApi";
