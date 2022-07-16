@@ -103,7 +103,7 @@ a {
 }
 
 /* Table of Content */
-.tableOfContent {
+.table-of-content {
   cursor: pointer;
   background-color: var(--color-light);
   border-radius: 1rem;
@@ -111,7 +111,7 @@ a {
   margin-bottom: 2rem;
 }
 
-.tableOfContent__header {
+.table-of-content__header {
   align-items: center;
   border-bottom: 0.2px solid #6e6969;
   display: flex;
@@ -119,7 +119,7 @@ a {
   justify-content: space-between;
 }
 
-.tableOfContent__heading {
+.table-of-content__heading {
   color: var(--color-body-darker);
   margin: 1rem 0;
 }
