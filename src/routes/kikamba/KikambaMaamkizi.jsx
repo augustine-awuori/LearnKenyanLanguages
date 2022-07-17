@@ -20,11 +20,11 @@ export default function Maamkizi() {
   return (
     <MapSwahiliEnglish
       data={data}
-      englishPickerName="greeting"
+      englishPickerName="response"
       englishPrefix="Jibu:"
       FooterComponent={FooterComponent}
       HeaderComponent={HeaderComponent}
-      swahiliPickerName="response"
+      swahiliPickerName="greeting"
     />
   );
 }
