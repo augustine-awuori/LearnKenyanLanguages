@@ -5,3 +5,4 @@ export { default as KikambaPhrases } from "./KikambaPhrases";
 export { default as KikambaNumbers } from "./kikambaNumbers";
 export { default as KikambaDaysOfTheWeek } from "./kikambaDaysOfTheWeek";
 export { default as KikambaMonthsOfTheYear } from "./kikambaMonthsOfTheYear";
+export { default as KikambaFamily } from "./kikambaFamily";
