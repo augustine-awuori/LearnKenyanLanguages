@@ -98,8 +98,14 @@ a {
 /* Container */
 .container {
   max-width: 1000px;
-  margin: 7rem auto 0;
+  margin: 0 auto;
   padding: 0 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 7rem auto 0;
+  }
 }
 
 /* Table of Content */
@@ -412,6 +418,16 @@ a {
 .nav__logo {
   width: 7rem;
   margin: 0.5rem 0;
+}
+
+.nav__icon {
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s;
+}
+
+.collapsible--expanded .nav__icon {
+  border-radius: 3px;
+  border: 2px solid var(--color-headings);
+  padding: 0.09rem;
 }
 
 @media screen and (min-width: 768px) {
