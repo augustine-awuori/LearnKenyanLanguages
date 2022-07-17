@@ -6,7 +6,7 @@ import {
   getMazoezi,
 } from "../../services/swahiliServices/fakeMieziYaMwakaService";
 import EnglishSwahiliInline from "../../components/EnglishSwahiliInline";
-import mapSwahiliEnglish from "../../components/mapSwahiliEnglish";
+import MapSwahiliEnglish from "../../components/mapSwahiliEnglish";
 import PageNavigators from "../../navigation/PageNavigators";
 import useApi from "../../hooks/useApi";
 
@@ -18,9 +18,9 @@ export default function MieziYaMwakaSection() {
   return (
     <section className="miezi-ya-mwaka">
       <h2>Miezi Ya Mwaka (Months of the Year)</h2>
-      {mapSwahiliEnglish(miezi)}
+      <MapSwahiliEnglish data={miezi} />
       <h3>Note</h3>
-      {mapSwahiliEnglish(notes, EnglishSwahiliInline)}
+      <MapSwahiliEnglish data={notes} Component={EnglishSwahiliInline} />
       <h3 className="zoezi">Zoezi</h3>
       {mazoezi.map(({ mfano, swali }) => (
         <>

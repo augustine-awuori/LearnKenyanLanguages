@@ -4,7 +4,7 @@ import {
   getMazoezi,
   getSikuZaWiki,
 } from "../../services/swahiliServices/fakeSikuZaWikiService";
-import mapSwahiliEnglish from "../../components/mapSwahiliEnglish";
+import MapSwahiliEnglish from "../../components/mapSwahiliEnglish";
 import PageNavigators from "../../navigation/PageNavigators";
 import useApi from "../../hooks/useApi";
 
@@ -15,7 +15,7 @@ export default function SikuZaWikiSection() {
   return (
     <>
       <h2>Siku za Wiki (Days of the Week)</h2>
-      {mapSwahiliEnglish(sikuZaWiki)}
+      <MapSwahiliEnglish data={sikuZaWiki} />
       <h3 className="zoezi">Zoezi</h3>
       {mazoezi.map(({ kichwa, maswali }) => (
         <>

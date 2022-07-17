@@ -2,15 +2,25 @@ import React from "react";
 
 import SwahiliEnglish from "./SwahiliEnglish";
 
-export default function mapSwahiliEnglish(
+export default function MapSwahiliEnglish({
   data = [],
-  Component = SwahiliEnglish
-) {
+  englishPrefix = "",
+  FooterComponent,
+  HeaderComponent,
+  Component = SwahiliEnglish,
+  englishPickerName = "english",
+  swahiliPickerName = "swahili",
+}) {
   return (
     <article>
-      {data.map(({ swahili, english }) => (
-        <Component english={english.trim()} swahili={swahili.trim()} />
+      {HeaderComponent && <HeaderComponent />}
+      {data.map((item) => (
+        <Component
+          english={`${englishPrefix} ${item[englishPickerName.trim()]}`}
+          swahili={item[swahiliPickerName.trim()]}
+        />
       ))}
+      {FooterComponent && <FooterComponent />}
     </article>
   );
 }

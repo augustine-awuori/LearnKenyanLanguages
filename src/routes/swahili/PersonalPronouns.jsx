@@ -4,7 +4,7 @@ import {
   getAllPronouns,
   getPronounsMfano,
 } from "../../services/swahiliServices/fakePersonalPronounService";
-import mapSwahiliEnglish from "../../components/mapSwahiliEnglish";
+import MapSwahiliEnglish from "../../components/mapSwahiliEnglish";
 import Table from "../../components/Table";
 import useApi from "../../hooks/useApi";
 import PageNavigators from "../../navigation/PageNavigators";
@@ -28,8 +28,7 @@ export default function PersonalPronouns() {
       ))}
 
       <h3>Example (Mfano)</h3>
-      {mapSwahiliEnglish(mfano)}
-
+      <MapSwahiliEnglish data={mfano} />
       <PageNavigators
         previousSectionName="Spices"
         previousUrl="/basic/spices"

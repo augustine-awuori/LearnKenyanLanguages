@@ -4,7 +4,7 @@ import {
   getActivities,
   getChores,
 } from "../../services/swahiliServices/fakeDailyActivitiesAndChoresService";
-import mapSwahiliEnglish from "../../components/mapSwahiliEnglish";
+import MapSwahiliEnglish from "../../components/mapSwahiliEnglish";
 import useApi from "../../hooks/useApi";
 import PageNavigators from "../../navigation/PageNavigators";
 
@@ -14,16 +14,26 @@ export default function DailyActivities() {
 
   return (
     <section>
-      <h2>Daily Activities and Daily Chores</h2>
-      <h3>Daily Activities</h3>
-      {mapSwahiliEnglish(activities)}
+      <MapSwahiliEnglish
+        data={activities}
+        HeaderComponent={() => (
+          <>
+            <h2>Daily Activities and Daily Chores</h2>
+            <h3>Daily Activities</h3>
+          </>
+        )}
+      />
       <h3>Daily Chores</h3>
-      {mapSwahiliEnglish(chores)}
-      <PageNavigators
-        nextSectionName="Colors"
-        previousSectionName="Various Personalities"
-        nextUrl="/basic/colors"
-        previousUrl="/basic/various-personalities"
+      <MapSwahiliEnglish
+        data={chores}
+        FooterComponent={() => (
+          <PageNavigators
+            nextSectionName="Colors"
+            previousSectionName="Various Personalities"
+            nextUrl="/basic/colors"
+            previousUrl="/basic/various-personalities"
+          />
+        )}
       />
     </section>
   );

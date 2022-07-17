@@ -1,23 +1,29 @@
 import React from "react";
 
 import { getFood } from "../../services/swahiliServices/fakeFoodService";
-import mapSwahiliEnglish from "../../components/mapSwahiliEnglish";
+import MapSwahiliEnglish from "../../components/mapSwahiliEnglish";
 import PageNavigators from "../../navigation/PageNavigators";
 import useApi from "../../hooks/useApi";
 
 export default function FoodSection() {
   const { data } = useApi(getFood);
 
+  const HeaderComponent = () => <h2>Food (Chakula)</h2>;
+
+  const FooterComponent = () => (
+    <PageNavigators
+      nextSectionName="Spices"
+      previousSectionName="Colors"
+      nextUrl="/basic/spices"
+      previousUrl="/basic/colors"
+    />
+  );
+
   return (
-    <section>
-      <h2>Food (Chakula)</h2>
-      {mapSwahiliEnglish(data)}
-      <PageNavigators
-        nextSectionName="Spices"
-        previousSectionName="Colors"
-        nextUrl="/basic/spices"
-        previousUrl="/basic/colors"
-      />
-    </section>
+    <MapSwahiliEnglish
+      data={data}
+      HeaderComponent={HeaderComponent}
+      FooterComponent={FooterComponent}
+    />
   );
 }

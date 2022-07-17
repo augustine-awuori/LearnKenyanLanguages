@@ -1,27 +1,26 @@
 import React from "react";
 
 import { getGreetingsResponse } from "../../services/swahiliServices/fakeMaamkiziGreetingsResponse";
+import MapSwahiliEnglish from "../../components/mapSwahiliEnglish";
 import PageNavigators from "../../navigation/PageNavigators";
-import SwahiliEnglish from "../../components/SwahiliEnglish";
 import useApi from "../../hooks/useApi";
 
 export default function MaamkiziGreetingsSection() {
   const { data } = useApi(getGreetingsResponse);
 
   return (
-    <section className="maamkizi">
-      <h2>Maamkizi Greetings</h2>
-      {data.map(({ greeting, response }) => (
-        <SwahiliEnglish
-          key={greeting}
-          english={"Jibu: " + response}
-          swahili={greeting}
+    <MapSwahiliEnglish
+      data={data}
+      englishPrefix="Jibu:"
+      englishPickerName="response"
+      swahiliPickerName="greeting"
+      HeaderComponent={() => <h2>Maamkizi Greetings</h2>}
+      FooterComponent={() => (
+        <PageNavigators
+          nextSectionName="Bidding goodbye"
+          nextUrl="/basic/bidding-goodbye"
         />
-      ))}
-      <PageNavigators
-        nextSectionName="Bidding goodbye"
-        nextUrl="/basic/bidding-goodbye"
-      />
-    </section>
+      )}
+    />
   );
 }
