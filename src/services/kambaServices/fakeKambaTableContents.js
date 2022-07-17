@@ -1,12 +1,12 @@
 const contents = [
   { heading: "Maamkizi / Ngethi", url: "" },
   { heading: "Bidding Goodbye", url: "/bidding-goodbye" },
-  { heading: "Goodnight in Swahili", url: "" },
-  { heading: "Other Useful Phrases", url: "" },
-  { heading: "Numbers", url: "" },
-  { heading: "Days of the Week", url: "" },
-  { heading: "Family", url: "" },
-  { heading: "Parts of the Body", url: "" },
+  { heading: "Goodnight in Swahili", url: "/goodnight-in-swahili" },
+  { heading: "Other Useful Phrases", url: "/other-useful-phrases" },
+  { heading: "Numbers", url: "/numbers" },
+  { heading: "Days of the Week", url: "/days-of-the-week" },
+  { heading: "Family", url: "/family" },
+  { heading: "Parts of the Body", url: "/parts-of-the-body" },
 ];
 
 const getBaseURL = () => "/learn-kikamba";

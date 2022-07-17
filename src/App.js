@@ -33,6 +33,7 @@ import {
   KikambaBiddingGoodbye,
   KikambaMaamkizi,
   KikambaGoodnightInSwahili,
+  KikambaPhrases,
 } from "./routes/kikamba";
 import NavBar from "./components/NavBar";
 import NotFound from "./components/NotFound";
@@ -91,6 +92,7 @@ export default function App() {
               path="goodnight-in-swahili"
               element={<KikambaGoodnightInSwahili />}
             />
+            <Route path="other-useful-phrases" element={<KikambaPhrases />} />
           </Route>
 
           <Route path="/" element={<Home />} />
