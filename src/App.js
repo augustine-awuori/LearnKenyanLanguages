@@ -35,6 +35,7 @@ import {
   KikambaGoodnightInSwahili,
   KikambaPhrases,
   KikambaNumbers,
+  KikambaDaysOfTheWeek,
 } from "./routes/kikamba";
 import NavBar from "./components/NavBar";
 import NotFound from "./components/NotFound";
@@ -95,6 +96,7 @@ export default function App() {
             />
             <Route path="other-useful-phrases" element={<KikambaPhrases />} />
             <Route path="numbers" element={<KikambaNumbers />} />
+            <Route path="days-of-the-week" element={<KikambaDaysOfTheWeek />} />
           </Route>
 
           <Route path="/" element={<Home />} />
