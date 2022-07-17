@@ -38,6 +38,7 @@ import {
   KikambaDaysOfTheWeek,
   KikambaMonthsOfTheYear,
   KikambaFamily,
+  KikambaPartsOfTheBody,
 } from "./routes/kikamba";
 import NavBar from "./components/NavBar";
 import NotFound from "./components/NotFound";
@@ -104,6 +105,10 @@ export default function App() {
               element={<KikambaMonthsOfTheYear />}
             />
             <Route path="family" element={<KikambaFamily />} />
+            <Route
+              path="parts-of-the-body"
+              element={<KikambaPartsOfTheBody />}
+            />
           </Route>
 
           <Route path="/" element={<Home />} />

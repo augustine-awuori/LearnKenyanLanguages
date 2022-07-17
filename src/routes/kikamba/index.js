@@ -6,3 +6,4 @@ export { default as KikambaNumbers } from "./kikambaNumbers";
 export { default as KikambaDaysOfTheWeek } from "./kikambaDaysOfTheWeek";
 export { default as KikambaMonthsOfTheYear } from "./kikambaMonthsOfTheYear";
 export { default as KikambaFamily } from "./kikambaFamily";
+export { default as KikambaPartsOfTheBody } from "./kikambaPartsOfTheBody";
