@@ -1,9 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export default function TableContent({ baseURL = "/", contents = [] }) {
+export default function TableContent({
+  className = "",
+  baseURL = "/",
+  contents = [],
+}) {
   return (
-    <nav>
+    <nav className={className}>
       {contents.map(({ url, heading }) => (
         <NavLink
           to={`${baseURL}${url}`}
