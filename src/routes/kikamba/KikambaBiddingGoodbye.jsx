@@ -1,7 +1,7 @@
 import React from "react";
 
 import { getKambaBiddingGoodbye } from "../../services/kambaServices/fakeBiddingGoodbyeService";
-import KambaPageNavigators from "./KikambaPageNavigators";
+import KikambaPageNavigators from "./KikambaPageNavigators";
 import SwahiliEnglish from "../../components/SwahiliEnglish";
 import useApi from "../../hooks/useApi";
 
@@ -14,7 +14,7 @@ export default function KikambaBiddingGoodbye() {
       {data.map(({ english, swahili }) => (
         <SwahiliEnglish swahili={english} english={swahili} />
       ))}
-      <KambaPageNavigators
+      <KikambaPageNavigators
         previousSectionName="Maamkizi"
         previousUrl="/"
         nextSectionName="Goodnight in Swahili"
