@@ -16,6 +16,7 @@ export default function MapSwahiliEnglish({
       {HeaderComponent && <HeaderComponent />}
       {data.map((item) => (
         <Component
+          key={item[englishPickerName.trim()] + item[swahiliPickerName.trim()]}
           english={`${englishPrefix} ${item[englishPickerName.trim()]}`}
           swahili={item[swahiliPickerName.trim()]}
         />

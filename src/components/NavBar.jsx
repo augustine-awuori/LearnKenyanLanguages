@@ -1,45 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import cancel from "../assets/icons/cancel.svg";
 import logo from "../assets/images/logo.jpg";
 import menu from "../assets/icons/menu.svg";
-// TODO: Redesign this component
+
 export default function NavBar() {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [collapsibleClassName, setCollapsibleClassName] =
-    useState("list nav__list ");
-
-  useEffect(() => {
-    function getNavItemsName() {
-      let name = "collapsible__content";
-      return isExpanded ? "collapsible--expanded " + name : name;
-    }
-
-    setCollapsibleClassName(collapsibleClassName + getNavItemsName());
-  }, [collapsibleClassName, isExpanded]);
 
   const switchExpansion = () => setIsExpanded(!isExpanded);
 
+  const getClassName = () => {
+    let name = "nav collapsible ";
+    return isExpanded ? (name += "collapsible--expanded") : name;
+  };
+
   return (
-    <nav className="nav collapsible">
+    <nav className={getClassName()}>
       <img src={logo} className="nav__logo" alt="logo" />
-      {!isExpanded ? (
-        <img
-          src={cancel}
-          className="icon nav__icon"
-          alt="icon"
-          onClick={switchExpansion}
-        />
-      ) : (
-        <img
-          src={menu}
-          className="icon nav__icon"
-          alt="icon"
-          onClick={switchExpansion}
-        />
-      )}
-      <ul className={collapsibleClassName}>
+      <img
+        src={menu}
+        className="icon nav__icon"
+        alt="icon"
+        onClick={switchExpansion}
+      />
+      <ul className="list nav__list collapsible__content">
         <NavLink to="/" onClick={switchExpansion}>
           <li className="nav__item">Languages</li>
         </NavLink>
