@@ -82,6 +82,10 @@ a {
   text-decoration: none;
 }
 
+a {
+  color: var(--color-headings);
+}
+
 /* Icons */
 .icon {
   color: var(--color-body);
@@ -356,7 +360,7 @@ a {
 }
 
 .collapsible__chevron {
-  transform: rotate(-90deg);
+  transform: rotate(7deg);
   transition: transform 0.3s;
 }
 
@@ -368,7 +372,7 @@ a {
 }
 
 .collapsible--expanded .collapsible__chevron {
-  transform: rotate(0deg);
+  transform: rotate(90deg);
 }
 
 .collapsible--expanded .collapsible__content {
